@@ -1,0 +1,14 @@
+VERSÃO AZUL-MARINHO + DOURADO — REFINADA
+
+Esta versão mantém a identidade azul-marinho e dourado vivo do escritório e incorpora:
+- nova composição visual jurídica profissional;
+- balança da Justiça e assinatura ES | MS mais sofisticada;
+- fotografias em preto e branco;
+- retirada da fotografia da APAC;
+- capa sem fotografia casual;
+- WhatsApp com ícone;
+- Instagram @evelynsimplicioadvocacia;
+- endereço Rua São Paulo, 1071, Centro, Belo Horizonte/MG;
+- layout responsivo para computador e celular.
+
+Abra index.html no navegador mantendo a pasta assets ao lado.

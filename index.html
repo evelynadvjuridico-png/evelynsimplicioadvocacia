@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Evelyn Simplicio e Marcelio Severino | Advocacia e Consultoria Jurídica</title>
+<meta name="description" content="Advocacia e Consultoria Jurídica em Belo Horizonte/MG. Atendimento técnico, humano e estratégico.">
+<style>
+:root{
+  --navy:#071A33;
+  --navy-2:#0B2747;
+  --navy-3:#102F54;
+  --gold:#D7A52E;
+  --gold-light:#F2C85A;
+  --gold-dark:#A97912;
+  --ivory:#F8F4EA;
+  --paper:#FCFAF5;
+  --white:#fff;
+  --ink:#152033;
+  --muted:#6E7480;
+  --line:#E8E0CF;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+.container{width:min(1180px,92%);margin:auto}
+.topbar{
+  position:sticky;top:0;z-index:100;
+  background:rgba(7,26,51,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(215,165,46,.25);
+}
+.nav{min-height:86px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.brand{display:flex;align-items:center;gap:15px;color:#fff}
+.logo-emblem{
+  width:62px;height:62px;border:1px solid rgba(242,200,90,.7);
+  position:relative;display:grid;place-items:center;
+  background:linear-gradient(145deg,#071A33,#0D2D51);
+  box-shadow:inset 0 0 0 4px rgba(255,255,255,.02),0 8px 24px rgba(0,0,0,.18);
+}
+.logo-emblem:before,.logo-emblem:after{
+  content:"";position:absolute;background:var(--gold);
+}
+.logo-emblem:before{width:28px;height:1px;top:13px}
+.logo-emblem:after{width:28px;height:1px;bottom:13px}
+.monogram{
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:22px;letter-spacing:.06em;color:#fff;
+}
+.monogram b{color:var(--gold-light);font-weight:500}
+.brand-name strong{
+  display:block;font-family:Georgia,"Times New Roman",serif;
+  font-size:18px;letter-spacing:.035em;font-weight:500;
+}
+.brand-name small{display:block;color:#D4DCE7;font-size:11px;letter-spacing:.16em;text-transform:uppercase;margin-top:2px}
+.menu{display:flex;align-items:center;gap:23px;color:#F7F8FA;font-size:13px}
+.menu a:not(.btn):after{content:"";display:block;width:0;height:1px;background:var(--gold);transition:.2s}
+.menu a:not(.btn):hover:after{width:100%}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:13px 18px;border-radius:7px;font-weight:700;font-size:14px;transition:.2s;
+}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-light));color:#071A33;box-shadow:0 10px 26px rgba(215,165,46,.22)}
+.btn-gold:hover{transform:translateY(-1px)}
+.btn-outline{border:1px solid rgba(255,255,255,.42);color:#fff}
+.icon{width:19px;height:19px;display:inline-block;vertical-align:middle}
+
+.hero{
+  position:relative;overflow:hidden;
+  background:
+  linear-gradient(90deg,rgba(4,18,36,.94) 0%,rgba(7,26,51,.80) 42%,rgba(7,26,51,.26) 72%,rgba(7,26,51,.10) 100%),
+  url('assets/mockup_aprovado.png') center top/cover no-repeat;
+  color:white;min-height:690px;display:flex;align-items:center;
+}
+.hero:after{display:none}
+.hero-content{position:relative;z-index:2;max-width:735px;padding:86px 0 130px}
+.eyebrow{
+  display:flex;align-items:center;gap:11px;color:var(--gold-light);
+  font-size:12px;font-weight:800;letter-spacing:.17em;text-transform:uppercase;
+}
+.eyebrow:before{content:"";width:42px;height:1px;background:var(--gold)}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif}
+h1{font-size:clamp(48px,6.2vw,78px);line-height:1.02;margin:19px 0 24px;font-weight:500;letter-spacing:-.025em}
+.hero p{font-size:19px;color:#E4EAF0;max-width:680px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero-note{margin-top:18px;font-size:12px;color:#C8D1DD}
+
+.signature{
+  margin-top:24px;display:flex;align-items:center;gap:14px;color:#fff
+}
+.signature-line{width:64px;height:1px;background:var(--gold)}
+.signature span{font-family:Georgia,serif;font-style:italic;color:#E6D8AF}
+
+.section{padding:88px 0}
+.section.alt{background:var(--ivory)}
+.section-head{max-width:780px;margin:0 auto 48px;text-align:center}
+.section-head .eyebrow{justify-content:center}
+.section-head h2{font-size:42px;line-height:1.15;color:var(--navy);margin:12px 0 16px;font-weight:500}
+.section-head p{color:var(--muted);font-size:17px}
+
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:center}
+.about-copy h2{font-size:44px;line-height:1.15;color:var(--navy);margin:12px 0 20px;font-weight:500}
+.about-copy p{color:#545B66;font-size:17px}
+.visual-frame{position:relative;padding:18px 18px 0 0}
+.visual-frame:before{
+  content:"";position:absolute;right:0;top:0;width:72%;height:72%;
+  border:1px solid var(--gold);
+}
+.visual-frame img{position:relative;z-index:2;border-radius:3px;box-shadow:0 24px 60px rgba(7,26,51,.15);filter:grayscale(100%) contrast(1.04)}
+.gold-caption{
+  position:relative;z-index:3;background:var(--navy);color:#fff;padding:22px 24px;
+  margin:-42px 0 0 44px;border-left:4px solid var(--gold);max-width:430px;
+}
+.gold-caption strong{font-family:Georgia,serif;font-size:21px;font-weight:500}
+
+.areas-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.area{
+  min-height:235px;background:#fff;border:1px solid var(--line);
+  padding:25px 22px;position:relative;overflow:hidden;transition:.22s;
+}
+.area:before{content:"";position:absolute;left:0;top:0;width:4px;height:100%;background:linear-gradient(var(--gold),var(--gold-dark))}
+.area:hover{transform:translateY(-3px);box-shadow:0 18px 35px rgba(7,26,51,.08)}
+.area h3{font-size:22px;color:var(--navy);margin:15px 0 10px;font-weight:500}
+.area p{font-size:14px;color:var(--muted);margin:0}
+.area-symbol{font-size:25px;color:var(--gold)}
+
+.quote{
+  padding:72px 0;background:linear-gradient(135deg,#06172D,#0B2B4D);color:white;
+  border-top:1px solid rgba(215,165,46,.28);border-bottom:1px solid rgba(215,165,46,.28)
+}
+.quote-inner{max-width:930px;margin:auto;text-align:center}
+.quote-mark{font-family:Georgia,serif;color:var(--gold);font-size:54px;line-height:1}
+.quote blockquote{font-family:Georgia,serif;font-size:32px;line-height:1.35;margin:5px 0 16px}
+.quote p{color:#C7D0DC;margin:0}
+
+.team-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.person{
+  background:#fff;border:1px solid var(--line);display:grid;grid-template-columns:220px 1fr;
+  min-height:310px;box-shadow:0 12px 36px rgba(7,26,51,.06)
+}
+.person img{width:100%;height:100%;object-fit:cover;object-position:center 25%;filter:grayscale(100%) contrast(1.08) brightness(.98)}
+.person-info{padding:30px}
+.person-info .role{color:var(--gold-dark);font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:.14em}
+.person-info h3{font-size:29px;color:var(--navy);margin:8px 0 3px;font-weight:500}
+.person-info .oab{font-weight:700;color:#394150;font-size:14px}
+
+.contact-section{background:var(--navy);color:white;padding:78px 0}
+.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:start}
+.contact-section h2{font-size:44px;line-height:1.12;margin:12px 0 18px;font-weight:500}
+.contact-section p{color:#CBD5E1}
+.contact-list{display:grid;gap:13px;margin-top:28px}
+.contact-item{
+  display:flex;align-items:flex-start;gap:13px;padding:14px 0;
+  border-bottom:1px solid rgba(255,255,255,.11)
+}
+.contact-item svg{flex:0 0 21px;margin-top:2px;color:var(--gold-light)}
+.contact-item strong{display:block;color:#fff;font-size:14px}
+.contact-item span,.contact-item a{color:#D2DAE4;font-size:14px}
+.contact-card{
+  background:#fff;color:var(--ink);padding:31px;border-top:4px solid var(--gold);
+  box-shadow:0 20px 50px rgba(0,0,0,.18)
+}
+.contact-card h3{color:var(--navy);font-size:27px;margin:0 0 8px;font-weight:500}
+.contact-card p{color:var(--muted);font-size:14px}
+.contact-card .btn{width:100%;margin-top:11px}
+
+.footer{background:#031120;color:#9CA9B8;padding:32px 0}
+.footer-grid{display:flex;justify-content:space-between;gap:25px;align-items:center}
+.footer strong{color:white;font-family:Georgia,serif;font-weight:500}
+.legal{font-size:11px;max-width:660px;text-align:right}
+
+@media(max-width:1000px){
+  .menu a:not(.btn){display:none}
+  .areas-grid{grid-template-columns:repeat(2,1fr)}
+  .team-grid{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .nav{min-height:74px}
+  .brand-name strong{font-size:14px}
+  .brand-name small{font-size:9px}
+  .logo-emblem{width:52px;height:52px}
+  .menu .btn{padding:11px 13px;font-size:12px}
+  .hero{
+  position:relative;overflow:hidden;
+  background:
+  linear-gradient(90deg,rgba(4,18,36,.94) 0%,rgba(7,26,51,.80) 42%,rgba(7,26,51,.26) 72%,rgba(7,26,51,.10) 100%),
+  url('assets/mockup_aprovado.png') center top/cover no-repeat;
+  color:white;min-height:690px;display:flex;align-items:center;
+}
+  .hero-content{padding:70px 0 110px}
+  .about-grid,.contact-grid{grid-template-columns:1fr}
+  .areas-grid{grid-template-columns:1fr}
+  .person{grid-template-columns:145px 1fr}
+  .person-info{padding:22px}
+  .person-info h3{font-size:24px}
+  .section{padding:68px 0}
+  .quote blockquote{font-size:25px}
+  .footer-grid{display:block}
+  .legal{text-align:left;margin-top:12px}
+}
+
+.logo-new{width:112px!important;height:64px!important;display:flex!important;gap:8px!important;padding:7px 10px!important;border-color:rgba(242,200,90,.75)!important}
+.logo-new .scales{font-size:27px;color:var(--gold-light);line-height:1}
+.logo-new .monogram{font-family:"Times New Roman",Georgia,serif;font-size:25px;font-weight:500;letter-spacing:-.04em;white-space:nowrap}
+.logo-new .monogram span:first-child{font-style:italic}
+.logo-new .monogram span:last-child{color:var(--gold-light)}
+.logo-new:before,.logo-new:after{display:none}
+
+
+.logo-new{
+  width:132px!important;height:64px!important;
+  display:flex!important;align-items:center!important;justify-content:center!important;
+  gap:10px!important;padding:7px 12px!important;
+  border:1px solid rgba(242,200,90,.78)!important;
+  background:linear-gradient(145deg,#081d38,#0b294b)!important;
+  box-shadow:inset 0 0 0 3px rgba(255,255,255,.015),0 8px 22px rgba(0,0,0,.18)!important;
+}
+.logo-new .scales{font-size:29px;color:var(--gold-light);line-height:1}
+.logo-new .monogram{
+  display:flex;align-items:center;gap:5px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:27px;line-height:1;white-space:nowrap;letter-spacing:-.055em
+}
+.logo-new .monogram .es{font-style:italic;color:#fff}
+.logo-new .monogram .ms{color:var(--gold-light);font-weight:500}
+.logo-new .monogram b{font-size:24px;color:var(--gold-dark);font-weight:400}
+.logo-new:before,.logo-new:after{display:none!important}
+
+
+.logo-img-aprovada{
+  width:210px;
+  height:62px;
+  display:flex;
+  align-items:center;
+  overflow:hidden;
+}
+.logo-img-aprovada img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  object-position:left center;
+  display:block;
+}
+@media(max-width:760px){
+  .logo-img-aprovada{width:165px;height:54px}
+}
+
+
+/* Correção pontual: remove artefato sobre a imagem da Justiça/Ártemis */
+.visual-frame:after{
+  display:none !important;
+  content:none !important;
+}
+
+
+/* ÚNICA alteração desta versão: enquadramento da imagem da Justiça/Ártemis */
+.visual-frame img[src*="artemis_justica"]{
+    width:100% !important;
+    height:100% !important;
+    min-height:0 !important;
+    display:block !important;
+    object-fit:cover !important;
+    object-position:center 43% !important;
+}
+
+
+/* ÚNICA alteração desta versão: cabeçalho preto */
+header,
+.site-header,
+.topbar,
+.navbar {
+    background: #000000 !important;
+}
+
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#inicio" aria-label="Página inicial">
+      <div class="logo-img-aprovada"><img src="assets/logo_aprovada_es_ms.png" alt="ES MS - Evelyn Simplicio e Marcelio Severino"></div>
+      <div class="brand-name">
+        <strong>Evelyn Simplicio & Marcelio Severino</strong>
+        <small>Advocacia e Consultoria Jurídica</small>
+      </div>
+    </a>
+    <nav class="menu">
+      <a href="#escritorio">O Escritório</a>
+      <a href="#atuacao">Áreas de Atuação</a>
+      <a href="#advogados">Advogados</a>
+      <a href="#contato">Contato</a>
+      <a class="btn btn-gold" href="https://wa.me/5531996758677" target="_blank" rel="noopener">
+        <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.52 2 2.04 6.48 2.04 12c0 1.76.46 3.48 1.33 4.99L2 22l5.13-1.34A9.96 9.96 0 0 0 12.04 22C17.56 22 22 17.52 22 12S17.56 2 12.04 2Zm5.82 14.32c-.24.67-1.39 1.28-1.93 1.36-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-2.99s.74-2.12 1.01-2.41c.26-.29.57-.36.76-.36h.55c.18 0 .42-.07.66.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.58.17.29.76 1.25 1.64 2.03 1.12 1 2.07 1.31 2.36 1.46.29.14.46.12.62-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.17 1.37Z"/></svg>
+        WhatsApp
+      </a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="eyebrow">Advocacia • Belo Horizonte/MG</div>
+        <h1>Estratégia jurídica com presença, técnica e compromisso.</h1>
+        <p>Atuação jurídica personalizada, com análise cuidadosa dos fatos, comunicação clara e condução firme das medidas necessárias à defesa dos interesses de cada cliente.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="https://wa.me/5531996758677" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.52 2 2.04 6.48 2.04 12c0 1.76.46 3.48 1.33 4.99L2 22l5.13-1.34A9.96 9.96 0 0 0 12.04 22C17.56 22 22 17.52 22 12S17.56 2 12.04 2Zm5.82 14.32c-.24.67-1.39 1.28-1.93 1.36-.5.08-1.13.11-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.79-4.17-4.94-4.36-.14-.19-1.18-1.57-1.18-2.99s.74-2.12 1.01-2.41c.26-.29.57-.36.76-.36h.55c.18 0 .42-.07.66.5.24.58.82 2 .89 2.14.07.14.12.31.02.5-.1.19-.14.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.3-.12.58.17.29.76 1.25 1.64 2.03 1.12 1 2.07 1.31 2.36 1.46.29.14.46.12.62-.07.17-.19.72-.84.91-1.13.19-.29.38-.24.65-.14.26.1 1.67.79 1.96.93.29.14.48.22.55.34.07.12.07.7-.17 1.37Z"/></svg>
+            Falar com a Dra. Evelyn
+          </a>
+          <a class="btn btn-outline" href="https://wa.me/5531995638186" target="_blank" rel="noopener">Falar com o Dr. Marcelio</a>
+        </div>
+        <div class="signature"><div class="signature-line"></div><span>Soluções jurídicas eficientes, atendimento humano e estratégico.</span></div>
+        <div class="hero-note">Conteúdo informativo. O atendimento depende da análise individualizada do caso.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="escritorio">
+    <div class="container about-grid">
+      <div class="about-copy">
+        <div class="eyebrow">O Escritório</div>
+        <h2>Advocacia que combina técnica, clareza e proximidade.</h2>
+        <p>Nosso trabalho parte de uma compreensão completa do problema jurídico e das consequências concretas que ele produz na vida do cliente. A estratégia é construída caso a caso, com responsabilidade, transparência e acompanhamento próximo.</p>
+        <p>Atuamos de forma consultiva, preventiva e contenciosa, em demandas judiciais e extrajudiciais, sempre com foco na solução juridicamente adequada e na proteção efetiva dos interesses envolvidos.</p>
+      </div>
+      <div class="visual-frame">
+        <img src="assets/artemis_justica.jpg" alt="Representação da Justiça com balança">
+        <div class="gold-caption"><strong>Experiência, técnica e compromisso para defender o que mais importa.</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt" id="atuacao">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Áreas de Atuação</div>
+        <h2>Atuação jurídica ampla e estratégica.</h2>
+        <p>Atendimento em questões cíveis, familiares, criminais, previdenciárias, consumeristas, bancárias e trabalhistas, além de demandas indenizatórias e conflitos relacionados a trânsito e seguros.</p>
+      </div>
+
+      <div class="areas-grid">
+        <article class="area"><div class="area-symbol">⚖</div><h3>Cível</h3><p>Contratos, responsabilidade civil, indenizações, cobranças e obrigações.</p></article>
+        <article class="area"><div class="area-symbol">§</div><h3>Criminal</h3><p>Defesa em inquéritos, ações penais, audiências, recursos e procedimentos criminais.</p></article>
+        <article class="area"><div class="area-symbol">◇</div><h3>Família e Sucessões</h3><p>Divórcio, guarda, alimentos, inventário, partilha de bens e planejamento sucessório.</p></article>
+        <article class="area"><div class="area-symbol">◎</div><h3>Consumidor</h3><p>Cobranças abusivas, negativação indevida, vícios, fraudes e falhas na prestação de serviços.</p></article>
+        <article class="area"><div class="area-symbol">◈</div><h3>Trabalhista</h3><p>Reclamatórias, rescisões, verbas trabalhistas e demais direitos decorrentes da relação de trabalho.</p></article>
+        <article class="area"><div class="area-symbol">✦</div><h3>Previdenciário</h3><p>Aposentadorias, benefícios por incapacidade, BPC/LOAS, salário-maternidade e revisões.</p></article>
+        <article class="area"><div class="area-symbol">◆</div><h3>Bancário</h3><p>Contratos, empréstimos, financiamentos, abusos, cobranças e fraudes bancárias.</p></article>
+        <article class="area"><div class="area-symbol">▣</div><h3>Execução Penal</h3><p>Progressão de regime, livramento condicional, remição, benefícios e acompanhamento da pena.</p></article>
+        <article class="area"><div class="area-symbol">↗</div><h3>Acidentes de Trânsito</h3><p>Responsabilidade civil, danos materiais, lucros cessantes e indenizações decorrentes de acidentes.</p></article>
+        <article class="area"><div class="area-symbol">◉</div><h3>Seguradoras e Proteção Veicular</h3><p>Negativa de cobertura, atraso de indenização e conflitos com seguradoras e associações.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="quote">
+    <div class="container quote-inner">
+      <div class="quote-mark">“</div>
+      <blockquote>O Direito existe para proteger pessoas. A advocacia existe para fazer essa proteção sair do papel.</blockquote>
+      <p>Evelyn Simplicio & Marcelio Severino • Advocacia e Consultoria Jurídica</p>
+    </div>
+  </section>
+
+  <section class="section" id="advogados">
+    <div class="container">
+      <div class="section-head">
+        <div class="eyebrow">Advogados</div>
+        <h2>Atendimento pessoal e acompanhamento próximo.</h2>
+      </div>
+
+      <div class="team-grid">
+        <article class="person">
+          <img src="assets/evelyn_profissional.jpeg" alt="Dra. Evelyn Simplicio">
+          <div class="person-info">
+            <div class="role">Advogada</div>
+            <h3>Dra. Evelyn Simplicio</h3>
+            <div class="oab">OAB/MG 229.835</div>
+            <p>Atuação estratégica em demandas judiciais e extrajudiciais, com atenção à prova, à construção da tese e à comunicação direta com o cliente.</p>
+          </div>
+        </article>
+
+        <article class="person">
+          <img src="assets/marcelio_pb_escolhida.jpg" alt="Dr. Marcelio Severino">
+          <div class="person-info">
+            <div class="role">Advogado</div>
+            <h3>Dr. Marcelio Severino</h3>
+            <div class="oab">OAB/MG 236.151</div>
+            <p>Atuação consultiva e contenciosa, com análise técnica, responsabilidade profissional e foco na proteção jurídica dos interesses do cliente.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-section" id="contato">
+    <div class="container contact-grid">
+      <div>
+        <div class="eyebrow">Contato</div>
+        <h2>Fale diretamente com o escritório.</h2>
+        <p>Atendimento presencial e digital. Entre em contato para apresentar seu caso e verificar a forma adequada de atendimento.</p>
+
+        <div class="contact-list">
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.52 2 2.04 6.48 2.04 12c0 1.76.46 3.48 1.33 4.99L2 22l5.13-1.34A9.96 9.96 0 0 0 12.04 22C17.56 22 22 17.52 22 12S17.56 2 12.04 2Z"/></svg>
+            <div><strong>WhatsApp</strong><span>Dra. Evelyn: (31) 99675-8677 • Dr. Marcelio: (31) 99563-8186</span></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+            <div><strong>Instagram</strong><a href="https://instagram.com/evelynsimplicioadvocacia" target="_blank" rel="noopener">@evelynsimplicioadvocacia</a></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5h16v14H4z"/><path d="m4 7 8 6 8-6"/></svg>
+            <div><strong>E-mail</strong><span>evelyn.advjuridico@gmail.com<br>advogado.marcelio.severino@gmail.com</span></div>
+          </div>
+          <div class="contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div><strong>Endereço</strong><span>Rua São Paulo, 1071, Centro, Belo Horizonte/MG</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Atendimento jurídico</h3>
+        <p>Envie uma mensagem pelo WhatsApp. Caso já tenha documentos relacionados ao problema, deixe-os separados para facilitar a análise inicial.</p>
+        <a class="btn btn-gold" href="https://wa.me/5531996758677" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.52 2 2.04 6.48 2.04 12c0 1.76.46 3.48 1.33 4.99L2 22l5.13-1.34A9.96 9.96 0 0 0 12.04 22C17.56 22 22 17.52 22 12S17.56 2 12.04 2Z"/></svg>
+          Conversar pelo WhatsApp
+        </a>
+        <a class="btn" style="border:1px solid #D8DDE4;color:#071A33;width:100%;margin-top:10px" href="https://instagram.com/evelynsimplicioadvocacia" target="_blank" rel="noopener">
+          Instagram do escritório
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div><strong>Evelyn Simplicio & Marcelio Severino</strong><br>Advocacia e Consultoria Jurídica</div>
+    <div class="legal">OAB/MG 229.835 • OAB/MG 236.151<br>Conteúdo de caráter exclusivamente informativo. A análise e a eventual contratação dependem das circunstâncias específicas de cada caso.</div>
+  </div>
+</footer>
+
+</body>
+</html>
